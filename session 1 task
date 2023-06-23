@@ -1,0 +1,54 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2 
+   
+    http1.1
+    this vaersion made thing faster by allowing the computer it users resource for use to getting
+     multiple pages.
+     there is head of line blocks all the request behind it until
+     HTTP2
+     it accpet the more request and sending message. it allow to the more request,
+      server to all multiple pages.
+
+2.Write a blog about objects and its internal representation in Javascript
+
+      he object is important source of the data type to built the blocks 
+      for morden javascript.
+      to compare to arry an arry varaiables are execute to one by one 
+      to end of the valu. the objevts variables are execute the one variables ending value.
+      ex:
+      var bike={ name: "ktm",
+    model:'duke250",
+    color:"white",
+    racebike: false}
+
+3.Codekata practice
+  
+      codekata is one of the best platform for codeing practice 
+      i interesting to do the coding practice in codekata
+      its more benefit for gain the coding skills
+
+4.Read about IP address, port, HTTP methods, MAC addres
+
+      IP address
+      ip address is a access the one web application URL
+      the URL provide the backround sourece in isp and dns then
+     the isp netwroks provide one ip address like= 192.130.1.2020
+
+      HTTP methods
+      http is a get, post, put, delete
+      there are four methos in http
+      Get is used to information form the given service url
+      Post is used to send the date in alla server
+      Put is used to replace the current resource
+      Delete is used to remove the current resouce .
+
+      Mac address
+       mac address is a hardware its is separately that use to identify 
+       device on a network
+
+
+
+
+
+      
+
+     
