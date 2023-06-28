@@ -1,0 +1,36 @@
+</head>
+<body>
+  <script>
+   
+    var xhr = new XMLHttpRequest();
+
+    var method = "GET";
+
+    var url = "https://restcountries.com/v3.1/all";
+
+    xhr.open(method,url);
+
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        
+        console.log(xhr.responseText);
+        var response= JSON.parse(xhr.responseText);
+       // console.log(response.length)
+        for (var i=0; i< response.length; i++)
+        {
+         console.log(response[i].name);
+         console.log(response[i].region);
+        console.log(response[i].subregion);
+         console.log(response[i].population);
+        }
+      }
+      else
+      {
+          console.log("request failed", xhr.status);
+            }      
+          }
+  
+    xhr.send();
+  </script>
+</body>
+</html>
