@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr  1fr;
+        border: 1px solid black;
+        background-color: aqua;
+        padding: 10px
+     }
+     .item{
+        border: 1px solid black;
+        background-color: chartreuse;
+        color: white;
+        margin: 5px;
+        padding: 5px;
+     }
+     .flex-container{
+        display: flex;
+        flex-flow: column wrap-reverse;
+        align-content: end;
+        border: 2px solid black;
+        background-color: rgb(43, 159, 253);
+        padding: 20px;
+     }
+     .f-item{
+        flex: 0 0 auto;
+        margin: 10px;
+        border: 1px solid black;
+        background-color: rgb(255, 244, 127);
+        color: rgb(10, 11, 11);
+     }
+        </style>
+        </head>
+        <body>
+         <h2> CSS Grid</h2>
+            <div class="container">
+            <div class="item" style="grid-column: 3; grid-row: 2">Del 1</div>
+            <div class="item" style="grid-column: 3; grid-row: 2">Del 3</div>
+            <div class="item" style="grid-column: 3; grid-row: 2">Del 5</div>
+            <div class="item"> Del 1</div> 
+            <div class="item"> Del 2</div>
+            <div class="item"> Del 3</div>
+            <div class="item"> Del 4</div>
+            <div class="item"> Del 5</div>
+            <div class="item"> Del 6</div>
+            <div class="item"> Del 7</div>
+            <div class="item"> Del 8</div>
+        </div>
+         <h3> CSS Flex</h3>
+         <div class="flex-container">
+            <div class="f-item"> Del 1</div> 
+            <div class="f-item"> Del 2</div>
+            <div class="f-item"> Del 3</div>
+            <div class="f-item"> Del 4</div>
+        </div>
+        </body>
+        </body>
+        </html>

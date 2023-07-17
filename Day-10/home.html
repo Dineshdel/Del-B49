@@ -18,10 +18,38 @@
         width: 200px;
         height: 150px;
         padding: 10px;
-        border: 2px double black;
+        border: 4px double black;
         margin: 5px;
         background-color: rgb(79, 213, 240);
     }
+    .boxs
+    {
+        width: 200px;
+        height: 150px;
+        padding: 10px;
+        border: 4px double rgb(202, 250, 29);
+        margin: 5px;
+        background-color: white;
+    }
+    .inbox
+    {
+        width: 500px;
+        height: 150px;
+        padding: 10px;
+        border: 4px double black;
+        margin: 5px;
+        background-color: grey
+    }
+    .inner-box
+    {
+        padding: 20px;
+        border: 2px solid red;
+        margin: 10px;
+    }
+    .inbox:hover
+        {
+            background-color: mediumturquoise;
+        }
     </style>
 </head>
 <body>
@@ -37,6 +65,13 @@
  <br/>
  <br/>
  <div style="display:inline-block" class="box"> its my box</div>
- <div style="display:inline-block" class="box"> its my box 2</div>
+ <div style="display:inline-block" class="boxs"> its my box 2</div>
+ <br/>
+ <br/>
+ <div class="inbox">
+ <div  class="inner-box" class="'box"> its my box 3</div>
+ <div class="inner-box" class="box"> its my box 4</div>
+ </div>
+ <br/>
 </body>
 </html>
