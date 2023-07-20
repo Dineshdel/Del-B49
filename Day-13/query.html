@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <style>
+        img{
+            width: 150px;
+            height: 200px;
+        }
+    </style>
+    <body>
+        <div>
+       <div class="its"> DEL 1</div> 
+       <p class="its"> DEL 2</p> 
+       <p class="its"> DEL 3</p> 
+       <p class="its"> DEL 4</p> 
+       <p class="its"> DEL 5</p> 
+       <img src="img.jpg"/>
+         </div>
+         <script>
+
+        const msg = document.createElement('div');
+        msg.innerText = "AppendChild VS Append";
+        msg.innerHTML = `<span style="color: green; background-color: aqua">AppendChild VS Append</span>`;
+        document.body.append(msg);
+  
+       const para = document.querySelector(".its");
+        para.style.color = "blue";
+
+        //const image = document.querySelector(".img");
+          //  image.querySelector("src","img.jpg");
+  
+        const paras = document.querySelectorAll(".its");
+        console.log("paras", paras);
+          paras.forEach((anyname) => {
+          anyname.style.color = "red";
+        });
+          // const msg = document.createElement("div");
+          // msg.innerText = "appendChild VS append";
+          // document.body.append(msg);
+
+         //  const para = document.querySelector(".its");
+          // para.style.color =  "light green";
+
+         //  const paras = document.querySelectorall(".its");
+          //  console.log("paras", paras);
+           //  paras.forEach((anyname) => {
+           //    anyname.style.color = "blue";
+         // });
+         </script>
+
+      </body>
+    </html>   
+    

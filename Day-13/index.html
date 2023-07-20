@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+        img{
+            width: 80px;
+            height: 120px;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+      
+    </style>
+    </head>
+    <body>
+        <div id="parent"> JS DOM</div>
+        <script>
+            const para = document.createElement("p");
+            para.setAttribute("id","maindiv");
+            para.setAttribute("class","main");
+            para.innerText = "A Computer Science portal for geeks";
+				
+            const para1 = document.createElement("p");
+            para1.innerHTML = `<span style="background-color: yellow">A Computer Science portal for geeks</span>`;
+           
+            const link = document.createElement("a");
+            link.setAttribute("href","https://fonts.googleapis.com");
+            link.setAttribute("target","_blank");
+            link.innerText = "click here";
+           
+            const image = document.createElement("img");
+            image.setAttribute("src","img.jpg");
+
+            const parentEle = document.getElementById("parent");
+            parentEle.append(para, para1, link, image);
+        </script>
+    </body>
+    </html>
