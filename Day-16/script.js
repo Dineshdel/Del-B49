@@ -1,13 +1,55 @@
-function subject(callback){
-    console.log("1st period is maths whats 2nd period..");
-    setTimeout(() => {
-        console.log("period over...");
-        callback();
-},2000);
-    }
+setTimeout(() =>{
+    document.getElementById("count")
+    .innerHTML= 10;
 
-    function nextsubject(){
-     console.log("Next period is physics...")
-    }
+    setTimeout(() =>{
+        document.getElementById("count")
+        .innerHTML= 9;
 
-    subject(nextsubject)
+        setTimeout(() =>{
+            document.getElementById("count")
+            .innerHTML= 8;
+
+            setTimeout(() =>{
+                document.getElementById("count")
+                .innerHTML= 7;
+
+                setTimeout(() =>{
+                    document.getElementById("count")
+                    .innerHTML= 6;
+
+                    setTimeout(() => {
+                        document.getElementById("count")
+                        .innerHTML= 5;
+
+                        setTimeout(() =>{
+                            document.getElementById("count")
+                            .innerHTML= 4;
+
+                            setTimeout(() =>{
+                                document.getElementById("count")
+                                .innerHTML= 3;
+
+                                setTimeout(() =>{
+                                    document.getElementById("count")
+                                    .innerHTML= 2;
+
+                                    setTimeout(() =>{
+                                        document.getElementById("count")
+                                        .innerHTML= 1;
+
+                                        setTimeout(() =>{
+                                            document.getElementById("count")
+                                            .innerHTML= "HAPPY INDEPENDENCE DAY";
+                        
+                                        },1000)
+                                    },1000)
+                                },1000)
+                            },1000)
+                        },1000)
+                    },1000);
+                },1000)
+            },1000)
+        },1000)
+    },1000)
+})
