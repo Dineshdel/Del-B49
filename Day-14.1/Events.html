@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+    <body>
+        <h2> JS Events Example</h2>
+
+        <div id="target">
+            <p id="text">Click or hover over this text.</p>
+          </div>
+
+        <script>
+           const targetDiv = document.getElementById("target");
+           const textsElement = document.getElementById("text");
+
+            targetDiv.addEventListener("click", function (){
+                textsElement.innerText = "Clicked...";
+                textsElement.style.backgroundColor = "blue";
+            }); 
+
+            targetDiv.addEventListener("mouseover", function(){
+                textsElement.innerText = "mouseover...";
+                textsElement.style.backgroundColor = "orange";
+            });
+
+            targetDiv.addEventListener("mouseout", function(){
+                textsElement.innerText = "mouseout...";
+                textsElement.style.backgroundColor = "yellow";
+            });
+
+            document.addEventListener("keydown", function (){
+                console.log("keydown event", event.key);
+            });
+
+        </script>
+         
+    </body>
+    </html>

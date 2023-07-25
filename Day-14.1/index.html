@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manpulation Form</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+    <div class="main">
+    <h2 >DOM Manpulation Form</h2>
+   
+    <form id="form"> 
+    <lable for="name"> First Nmae:</lable>
+    <select>
+       <option>Mr. </option> 
+       <option>Miss. </option>
+       <option>Mrs. </option>
+    </select>
+    <input id="name" type="text" placeholder="Enter your firstname"/>
+    <br/>
+    <br/>
+    <lable for="lname"> Last Nmae:</lable>
+    <input id="lname" type="text" placeholder="Enter your lastname"/>
+    <br/>
+    <br/>
+    <lable  for="email" >Email:</lable>
+    <input id="eamil" type="email" placeholder="....@gamil.com"/>
+    <br/>
+    <br/>
+    <lable for="mobile">Mobile:</lable>
+    <select>
+        <option> +91</option> 
+        </select>
+    <input id="mobile" type="number" />
+    <br/>
+    <br/>
+    <lable for="gender">Gender</lable> </lable>
+    <input type="radio" name="gender" value="male"/> Male
+    <input type="radio" name="gender" value="female"/>Female
+    <input type="radio" name="gender" value="other"/>Other
+    <br/>
+    <br/>
+    <lable for="address"> Address:</lable>
+    <br/>
+    <input id="address" size="80">
+    <br/>
+    <br/>
+    <lable for="pin">Pin Code:</lable>
+    <input id="pin" type="number">
+    <br/>
+    <br/>
+    <lable>State</lable>
+    <select>
+    <option>Select</option>
+    <option>Chennai</option>
+    <option>Vellore</option>
+    <option>Other</option>
+    </select>
+    <lable>Country</lable>
+    <select>
+    <option>Select</option>
+    <option>IND</option>
+    <option>ENG</option>
+    <option>AUS</option>
+    </select>
+    <br/>
+    <br/>
+    <lable for="table">Table No:</lable> </lable>
+    <input name="table" type="number" size="10"/>
+    <br/>
+    <br/>
+    <lable>Choice of Foods:</lable><br/><br/>
+    <input type="checkbox" name="food" value="Briyani" />Briyani<br/>
+    <input type="checkbox" name="food" value="Pizza" />Pizza<br/>
+    <input type="checkbox" name="food" value="Burger" />Burger<br/>
+    <input type="checkbox" name="food" value="Chicken Fry" />Chicken Fry<br/>
+    <input type="checkbox" name="food" value="Matton Gravy" />Matton Gravy<br/>
+<br/>
+
+    <button type="submit"> Save </button>
+</form>
+<br/>
+  <table id="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Food</th>
+        </tr>
+    </thead>
+  </table>
+</div>
+<script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <style>
+        .container{
+           
+            border: 2px solid black;
+            padding: 50px;
+            margin: 10px;
+            background-color: aquamarine;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(89, 231, 24);
+
+        }
+        
+        .form-group{
+            border: 1px;
+            margin-bottom: 10px;
+        }
+        .result{
+            font-weight: bold;
+            border: 2px solid;
+            margin-top: 10px;
+            background-color: yellow;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h2>Calci...</h2>
+            <div class="form-group"> 
+                <lable for="num1"> Number 1:</lable>
+                <input type="number1" id="num1"/>
+            </div>
+            <div class="form-group"> 
+                <lable for="num2"> Number 1:</lable>
+                <input type="number2" id="num2"/>
+            </div>
+            <div class="form-group">
+                <button onclick="calci('add')">ADD</button>
+                <button onclick="calci('sub')">SUB</button>
+                <button onclick="calci('mul')">MUL</button>
+                <button onclick="calci('div')">DIV</button>
+            </div>
+            <div class="result">
+                Answer :
+                <span id="result"></span>
+        </div>
+       
+        </div>
+        <script src="index.js">
+        </script>
+    </body>
+    </html>
