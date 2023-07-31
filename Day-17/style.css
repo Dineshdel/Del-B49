@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(177, 173, 173) !important;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(minmax(15rem,1fr));
+    
+    text-align: center !important;
+    gap: 2rem ;
+
+}
+.container{
+    border-radius: 3%;
+    background-color:rgb(24, 158, 24);
+}
+span{
+    font-weight: bold;
+}
+.cards{
+    background-color: aquamarine;
+    width: 20rem;
+    height: 30rem;
+   
+}
+.flag{
+    justify-content: center;
+    place-content: center;
+    text-align: center;
+     padding: 2rem; 
+    width:10rem;
+    height: 10rem;
+    margin: auto;
+}
+.card{
+    
+    background-color: rgb(251, 180, 73);
+}
