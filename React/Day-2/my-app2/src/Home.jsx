@@ -8,12 +8,14 @@ function Home() {
     <div>
        
       {
-          //  arr.map((x) => (
+           arr.map((x) => (
                
-               // <h2>its me {x}:{a+b}: {a-b}</h2>
+                <h2>its me {x}:{a+b}: {a-b}</h2>
 
-          //  )
-           // )
+           )
+            )
+           }
+           {
            <div>
            <h2> its me {arr[0]}: {a+b}</h2>
            <h3> its me {arr[1]}: {a-b}</h3>
