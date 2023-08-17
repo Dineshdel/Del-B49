@@ -3,9 +3,9 @@ import Like from './Like'
 import Comment from './Comment'
 
 function Post(props) {
-    const a = ["Dinesh", "Del"]
-    //let flag  = props.flag
-    const [flag, setFlag] = useState(true)
+    const a = ["Dinesh", "Del"];
+    //let flag  = true;
+    const [flag, setFlag] = useState(true);
     const handleClickAdd = () => {
         setFlag(false);
     }
@@ -23,8 +23,7 @@ function Post(props) {
             ) )
             }
         </ol>
-
-        {flag ? <button onClick={handleClickAdd}>Add</button> : <button onClick={handleClickRemove}>Remove</button>}
+        {flag? <button onClick={handleClickAdd}>Add</button> : <button onClick={handleClickRemove}>Remove</button>}
         <Like />
         <Comment />
         
