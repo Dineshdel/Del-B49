@@ -22,7 +22,6 @@ componentWillUnmount() {
     console.log("The component is going to be unmounted..")
 }
 
-
 handleButtonClick = () => {
     this.setState ({this: this.state.items + 1});
 }
