@@ -37,7 +37,7 @@ setTimeout(() =>{
                                     setTimeout(() =>{
                                         document.getElementById("count")
                                         .innerHTML= 1;
-
+                                        
                                         setTimeout(() =>{
                                             document.getElementById("count")
                                             .innerHTML= "HAPPY INDEPENDENCE DAY";
