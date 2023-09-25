@@ -1,36 +1,33 @@
 import React, { useContext } from "react";
 import { ProductContext } from "./ContextApi/Context";
 import "./App.css";
-import jsonData from "./Product.json";
-
-const Cart = () => {
-  const productsData = JSON.stringfy(jsonData);
-
-  const cartItems = useContext(ProductContext);
-
-  //   console.log(cartItems)
-  console.log("cartItems", cartItems);
-
-  if (cartItems.length === 0) {
-    return (
-      <div>
-        <p> "No Items Added"</p>
-      </div>
-    );
-  }
+const Home = (props) => {
+  const products = useContext(ProductContext);
+  const clickHandler = (item) => {
+    setCartItems(...cartItems, item);
+  };
 
   return (
-    <div>
-      {cartItems &&
-        cartItems.map((singleItems) => (
-          <div>
-            <p>{singleItems.title}</p>
-            <p>{singleItems.price}</p>
-            <img src={singleItems.image} alt="img" />
-          </div>
-        ))}
+    <div className="container">
+      {products &&
+        products.map((prod) => {
+          <div className="card" key={prod.id}>
+            <p>{prod.title}</p>
+            <p>{prod.price}</p>
+            <img src={prod.image} className="img" />
+            <div>
+              <button
+                onClick={() => {
+                  clickHandler(prod);
+                }}
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>;
+        })}
     </div>
   );
 };
 
-export default Cart;
+export default Home;
