@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import { Switch } from "react-router-dom";
 import ListEmployee from "./components/ListEmployee";
 import HeaderComponent from "./components/HeaderComponent";
@@ -15,18 +15,18 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter />
       <Router>
         <HeaderComponent />
         <div className="container">
-          <Switch>
+          <Routes>
             <Route path="/" exact component={ListEmployee}></Route>
             <Route path="/employees" component={ListEmployee}></Route>
             <Route path="/add-employee/:id" component={CreateEmployee}></Route>
             <Route path="/view-employee/:id" component={ViewEmployee}></Route>
             {/* <Route path = "/update-employee/:id" component = {UpdateEmployeeComponent}></Route> */}
-          </Switch>
+          </Routes>
         </div>
+
         <FooterComponent />
       </Router>
     </div>
