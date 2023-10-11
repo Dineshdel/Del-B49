@@ -12,8 +12,8 @@ app.use(express.json());
 app.use(cors());
 //mongo connection
 
-const MONGO_URL = process.env.DB;
-export const client = new MongoClient(MONGO_URL);
+const DB_URL = process.env.DB_URL;
+export const client = new MongoClient(DB_URL);
 client.connect();
 console.log("mongo connected");
 
