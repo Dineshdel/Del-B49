@@ -25,7 +25,7 @@ function Urldirect() {
   }
   useEffect(() => {
     getlongurl();
-  }, []);
+  } );
   return (
     <>
       <h1>url redirection Please wait {userid}</h1>

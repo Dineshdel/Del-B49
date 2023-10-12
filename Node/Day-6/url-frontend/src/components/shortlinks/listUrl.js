@@ -1,8 +1,8 @@
 import axios from "axios";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { config } from "../../config";
-import UserContext from '../../context/UserContext';
+// import UserContext from '../../context/UserContext';
 
 import ListTable from "./ListTable";
 
@@ -50,7 +50,7 @@ function ListUrl() {
   }
   useEffect(() => {
     getList();
-  }, []);
+  });
 
 
 
