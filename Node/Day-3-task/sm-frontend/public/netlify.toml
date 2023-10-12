@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "/student-mentor/frontend"
+  base = "/student-mentor/frontend"
+
+  [[redirects]]
+
+  from = "/*"
+  to = "/indext.html"
+  status = 200
