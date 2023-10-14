@@ -1,25 +1,31 @@
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from "./page/LandingPage";
-import HomePage from "./page/HomePage";
-import StudentPage from "./page/StudentPage";
-import MentorPage from "./page/MentorPage";
-import SelectedStudentPage from "./page/SelectedStudent";
-import SelectedMentorPage from "./page/SelectedMentor";
-
+import './App.css';
+import MentorForm from './Components/MentorForm';
+import StudentForm from './Components/StudentForm';
+import AssignorChangeMentor from './Components/AssignorChangeMentor';
+import MentorTable from './Components/MentorTable';
+import StudentTable from './Components/StudentTable';
+import AssignStudentsToMentor from './Components/AssignStudentsToMentor';
+import { AssignMentorProvider } from './Context/AssignMentors';
+import ShowMentorStudents from './Components/ShowMentorStudents';
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/mentor" element={<MentorPage />} />
-          <Route path="/student" element={<StudentPage />} />
-          <Route path="/student/:student" element={<SelectedStudentPage />} />
-          <Route path="/mentor/:mentor" element={<SelectedMentorPage />} />
-        </Routes>
-      </BrowserRouter>
+    <div className="container">
+      <h2 style={{textAlign:"center",color:"seagreen",marginBottom:"2rem"}}>Zen Mentors</h2>
+      <AssignMentorProvider>
+        <div className="row">
+          <div className="col-md-5 col-sm-12">
+            <MentorForm />
+            <StudentForm />
+            <AssignorChangeMentor />
+            <AssignStudentsToMentor />
+            <ShowMentorStudents /> 
+          </div>
+          <div className="col-md-7 col-sm-12">
+            <MentorTable />
+            <StudentTable />
+          </div>
+        </div>
+      </AssignMentorProvider>
     </div>
   );
 }
