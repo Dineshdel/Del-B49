@@ -1,21 +1,37 @@
-@import "~spinners-react/lib/SpinnerDotted.css";
-.nav-item {
-  cursor: pointer;
-}
-.news {
-  animation : slide 10s linear infinite;
-  color :blueviolet
+
+.mik{
+display: flex;
+justify-content: center;
+background-color: aquamarine;
 }
 
-@keyframes slide {
-  0% {
-    transform: translatex(0%)
-  }
-
-  100% {
-    transform: translatex(100%)
-  }
+label{
+  font-weight: bold;
+  display: flex;
+  margin-bottom:20px;
 }
-.not-allowed{
-  cursor: not-allowed;
+
+input[type='text'],
+input[type='email']{
+  display:block;
+  width:400px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: gray;
+  background-color: white;
+  border: 1px solid#ccc;
+  border-radius:5px;
+
+}
+button{
+ border-radius: 5px;
+ cursor:pointer;
+}
+.form-control{
+  margin-bottom: 20px;
+
+}
+.err{
+  color:red;
 }
