@@ -25,15 +25,9 @@ function AssignStudentsToMentor() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        /* console.log("removed and selected");
-        console.log(removedOptions,selectedOptions) */
         let selectedStudents = removedOptions.length ? removedOptions : selectedOptions;
-        /* console.log("selected studs")
-        console.log(selectedStudents) */
         const stud_list = selectedStudents.map(stud => { return stud.value})
-        /* console.log("value sent to api")
-        console.log(stud_list,mentor); */
-        await axios.patch(`https://zen-assign-mentors.herokuapp.com/Students/assign-mentor-students`,{mentor,stud_list})
+  await axios.patch(`https://zen-assign-mentors.herokuapp.com/Students/assign-mentor-students`,{mentor,stud_list})
         const stud_data = await axios.get(`https://zen-assign-mentors.herokuapp.com/Students`)
         /* console.log(stud_data.data) */
         setStudents(stud_data.data)
@@ -55,14 +49,7 @@ function AssignStudentsToMentor() {
                 </div>
                 <div className="mb-3">
                     <label htmlFor="students" className="form-label">Students<span style={{color: "red"}}>*</span></label>
-                    {/* <select multiple onChange={handleChange} class="form-control selectpicker">
-                        {
-                            students.map(student => {
-                                return <option value={student._id}>{student.name}</option>
-                            })
-                        }
-                    </select> */}
-                    <div class="chat-container">
+                 <div class="chat-container">
                         <MultiSelect options = {options} displayValue = "name" onSelect = {onSelect} onRemove={onRemove} 
                             style = {{
                                 searchBox: {

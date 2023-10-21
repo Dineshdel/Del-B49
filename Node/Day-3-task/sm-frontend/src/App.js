@@ -10,7 +10,8 @@ import ShowMentorStudents from './Components/ShowMentorStudents';
 function App() {
   return (
     <div className="container">
-      <h2 style={{textAlign:"center",color:"seagreen",marginBottom:"2rem"}}>Zen Mentors</h2>
+      <h2 style={{textAlign:"center",marginBottom:"2rem"}}>Mentor and Student Assigning</h2>
+      {/* <h2>Student Mentor</h2 */}
       <AssignMentorProvider>
         <div className="row">
           <div className="col-md-5 col-sm-12">
