@@ -4,24 +4,24 @@ const INITIAL_STATE = {
   products: [
     {
       id: 1,
-      title: "food1",
+      title: "Biryani",
       price: 100,
       image:
-        "https://i1.wp.com/sg.fdblogs.wpengine.com/wp-content/uploads/sites/2/2016/05/salted-eggs.jpg",
+        "",
     },
     {
       id: 2,
-      title: "food2",
+      title: "Pizza",
       price: 150,
       image:
         "https://www.brandinginasia.com/wp-content/uploads/2016/12/Foodpanda-Pakistan.jpg",
     },
     {
       id: 3,
-      title: "food3",
+      title: "Bugur",
       price: 200,
       image:
-        "https://magazine.foodpanda.sg/wp-content/uploads/sites/2/2020/01/cropped-xiumai.jpg",
+        "https://food.ndtv.com/food-drinks/eating-hack-5-tips-to-eat-a-burger-without-worrying-about-it-falling-apart-3126216",
     },
     {
       id: 4,

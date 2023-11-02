@@ -11,7 +11,7 @@ function Home() {
         <div className="text-center"></div>
         <div className="mx-auto ">
           <h2 className="text-white">
-            <span className="text-black"> Details:</span>
+            <span className="text-black"> Add Datas::</span>
           </h2>
           <form
             className="p-4 p-md-5 mb-5 border rounded bg-light"
