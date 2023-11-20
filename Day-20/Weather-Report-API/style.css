@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+#title {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 50px;
+  color: #379237;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  border-radius: 10px;
+}
+
+#city {
+  border: none;
+  height: 40px;
+  width: 500px;
+  margin: 0;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding-left: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+
+#search {
+  border: none;
+
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 520;
+  border-radius: 15px;
+}
+#search i:hover {
+  color: #379237;
+  transition: ease-in-out;
+}
+.card-header i {
+  color: #ea4335;
+}
+.card-body {
+  text-align: center;
+  padding-top: 20px;
+}
+#location {
+  text-transform: uppercase;
+  color: coral;
+  font-family: "Poppins", sans-serif;
+
+  font-size: 30px;
+  margin: 5px;
+}
+#weather {
+  color: coral;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  margin: 5px;
+}
+#temperature {
+  color: rgb(33, 32, 32);
+
+  font-size: 30px;
+  margin: 5px;
+}

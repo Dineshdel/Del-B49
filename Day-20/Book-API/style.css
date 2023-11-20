@@ -1,0 +1,87 @@
+body {
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: top;
+  background-size: cover;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#title {
+  color: rgb(255, 247, 0);
+  font-weight: 600;
+  text-shadow: 3px 3px 3px rgb(57, 20, 20);
+  letter-spacing: 0.5px;
+}
+#sub-title {
+  color: rgb(35, 34, 32);
+  font-weight: 800;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+#body-head,
+#of {
+  margin: 0%;
+  color: red;
+  font-weight: bold;
+}
+
+#of {
+  font-size: 20px;
+}
+
+#author_name {
+  font-style: oblique;
+  margin-bottom: 20px;
+  color: rgb(171, 240, 60);
+  font-weight: 400;
+  font-size: xx-large;
+}
+
+#rr {
+  font-weight: bolder;
+  font-style: italic;
+  color: rgb(171, 240, 60);
+  font-weight: 200;
+  font-size: xx-large;
+}
+
+#books {
+  height: 30px;
+  width: 120px;
+  align-content: center;
+  width: 240px;
+}
+
+.name,
+.isbn,
+.char,
+.rdate,
+.nfp,
+.author,
+.pub {
+  color: rgba(28, 13, 18, 0.948);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.show-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 480px;
+  height: 320px;
+  background-size: cover;
+}

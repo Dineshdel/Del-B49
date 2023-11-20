@@ -1,0 +1,10 @@
+.Jan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body {
+  font-size: 30px;
+  background-color: antiquewhite;
+}
