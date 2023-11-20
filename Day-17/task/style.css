@@ -1,0 +1,43 @@
+.row {
+  padding: 25px 20px 0px 20px;
+  background-color: rgb(48, 78, 89);
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.card-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.card-body {
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(173, 171, 166),
+    rgb(67, 85, 83)
+  );
+  color: white;
+}
+#button {
+  border: 1px solid whitesmoke;
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: white;
+}
+#button:hover {
+  color: #1d1ce5;
+}
+.btn-primary {
+  background: none;
+  border: none;
+}
+.btn-primary:hover {
+  background: none;
+  border: none;
+}
